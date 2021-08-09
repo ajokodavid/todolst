@@ -67,7 +67,7 @@ function displayTasks() {
     }
     let newLiTag = '';
     listArr.forEach( (value, index, array) => {
-        newLiTag = newLiTag + `<li class="list-group-item" id="buy">${value}<span class="spam" onclick="removeTasks(${index})"><button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button></span></li><br>`;
+        newLiTag = newLiTag + `<li class="list-group-item" id="buy">${value}<span class="spam" onclick="removeTasks(${index})"><button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt">-</i></button></span></li><br>`;
     } );
     toDoList.innerHTML = newLiTag;
     inputBoxx.value = '';
