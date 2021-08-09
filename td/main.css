@@ -1,0 +1,72 @@
+#todo {
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+#bdy {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, navy 0%, skyblue 100%);
+}
+
+#para {
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: mediumblue;
+    display: run-in;
+    background-color: orange;
+}
+
+#resp{
+    margin-top: 50px;
+}
+
+#resp #lister{
+    overflow-y: auto;
+}
+
+#inputer{
+    height: 50px;
+}
+
+.input-group button{
+    cursor: pointer;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.input-group button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#lister .list-group-item {
+   position: relative;
+   overflow: hidden;
+}
+
+#lister .list-group-item .spam {
+    position: absolute;
+    right: -45px;
+    margin-right: 2px;
+    transition: all 0.3s ;
+}
+
+#lister .list-group-item:hover .spam {
+    right: 0px;
+}
+
+#resp .footer {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+#resp .footer.active {
+opacity: 1;
+pointer-events: auto;
+}
